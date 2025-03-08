@@ -1,0 +1,25 @@
+{
+    "header": {
+        "items": ["logo","home","AboutUs","Contact","Login"],
+        "completed": true
+    },
+    "main":{
+        "slider": {
+            "completed": true,
+            "diplay": true
+        },
+        "ShowCase": true,
+        "äboutus": true,
+        "couterServices": true,
+        "products": {
+            "multiple": true,
+            "detail": true,
+            "button Rigister": true
+        }
+    },
+    "footer": {
+        "sociallinks": ["logo","title"],
+        "copyright": true,
+        "customer care": true
+    }
+}

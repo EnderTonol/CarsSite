@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auto RS</title>
+    <link rel="stylesheet" href="./styl.css">
+    <script src="./scripts/slider.js"></script>
+    <script type="module" src="https://unpkg.com/@splinetool/viewer@1.9.75/build/spline-viewer.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+           <h1>logo</h1>
+           <h1 class="growy">.</h1>
+           <h1>home</h1>
+           <h1>aboutus</h1>
+           <h1>Contacts</h1>
+           <h1>Login</h1>
+        </header>
+        <main>
+            <div class="slider">
+                <div class="slides">
+                    <div class="slide"><img src="image1.jpg" alt="Image 1"></div>
+                    <div class="slide"><img src="image2.jpg" alt="Image 2"></div>
+                    <div class="slide"><img src="image3.jpg" alt="Image 3"></div>
+                </div>
+                <button class="prev" onclick="moveSlide(-1)">❮</button>
+                <button class="next" onclick="moveSlide(1)">❯</button>
+                <div class="dots">
+                    <span class="dot" onclick="currentSlide(0)"></span>
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                </div>
+            </div>
+            
+            <spline-viewer url="https://prod.spline.design/3xPTx3WtD2-YhEG8/scene.splinecode"></spline-viewer>
+            <div class="services">
+                <div>.</div>
+                <div>.</div>
+            </div>
+            <div class="marquee">
+                <ul class="marquee-content">
+                  <li>1</li>
+                  <li>2</li>
+                  <li>3</li>
+                  <li>3</li>
+                  <li>3</li>
+                  <li>3</li>
+                  <li>3</li>
+                  <li>3</li>
+                  <li>3</li>
+                  <li>3</li>
+                  <li>3</li>
+                  <li>3</li>
+                  <li>3</li>
+                  <li>3</li>
+                </ul>
+              </div>
+            <div class="products">
+                <div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div>logo</div>
+            <div class="sociallinks"><h1>links</h1></div>
+            
+        </footer>
+    </div>
+    <script type="module" src="https://unpkg.com/@splinetool/viewer@1.9.75/build/spline-viewer.js"></script>
+</body>
+</html>
