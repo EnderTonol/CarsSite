@@ -1,4 +1,8 @@
 {
+    "company": "TorqueFusion Innovations",
+    "project": "TorqueFusion", 
+    "version": "1.0.0",
+    "date": "2021-09-01",
     "header": {
         "items": ["logo","home","AboutUs","Contact","Login"],
         "completed": true
