@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Auto RS</title>
-    <link rel="stylesheet" href="./styl.css">
+    <link rel="stylesheet" href="./styles/styl.css">
+    <link rel="stylesheet" href="./styles/counter.css">
     <script src="./scripts/slider.js"></script>
     <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script>
 </head>
@@ -21,19 +22,22 @@
         </header>
         <main>
             <div class="home">
-               <h1>TorqueFusion Innovations</h1>
-               <p class="slogan">Driving Performance, Igniting Innovation</p>
-               <p class="c1">High-Performance Design</p>
-               <p class="c2">Innovative Showcase </p>
-               <p class="c3">Engaging User Experience</p>
-               <dotlottie-player class="abstract" src="https://lottie.host/3393b19c-2061-4ea8-967f-cf74ed01c6dc/1eiShWODld.lottie" background="transparent" speed="1" style="height: 500px" loop autoplay></dotlottie-player>
+                <h1>TorqueFusion Innovations</h1>
+                <p class="slogan">Driving Performance, Igniting Innovation</p>
+                <p class="c1">High-Performance Design</p>
+                <p class="c2">Innovative Showcase </p>
+                <p class="c3">Engaging User Experience</p>
+                <dotlottie-player class="abstract"
+                    src="https://lottie.host/3393b19c-2061-4ea8-967f-cf74ed01c6dc/1eiShWODld.lottie"
+                    background="transparent" speed="1" style="height: 500px" loop autoplay></dotlottie-player>
             </div>
             <div class="carlogo">
                 <div>
                     <img src="./assets/logo/mazda.svg" alt="mazda">
                     <div>
                         <h3>Feel Alive.</h3>
-                        <p>Reflects their focus on driving excitement, innovation, and emotional connection with their cars</p>
+                        <p>Reflects their focus on driving excitement, innovation, and emotional connection with their
+                            cars</p>
                     </div>
                 </div>
                 <div>
@@ -44,7 +48,7 @@
                     </div>
                 </div>
                 <div class="toyota">
-                    <img src="./assets/logo/toyota.svg" alt="toyota" >
+                    <img src="./assets/logo/toyota.svg" alt="toyota">
                     <div>
                         <h3>Let's Go Places.</h3>
                         <p>Explore, move forward, and experience new journeys with confidence</p>
@@ -54,7 +58,7 @@
             <div class="slider">
                 <div class="slides">
                     <div class="slide"><img src="./assets/images/firrari.jpg" alt="Image 1"></div>
-                    <div class="slide"><img src="./assets/images/aramo.jpg"  alt="Image 2"></div>
+                    <div class="slide"><img src="./assets/images/aramo.jpg" alt="Image 2"></div>
                     <div class="slide"><img src="./assets/images/mers.jpg" alt="Image 3"></div>
                 </div>
                 <button class="prev" onclick="moveSlide(-1)">❮</button>
@@ -65,37 +69,81 @@
                     <span class="dot" onclick="currentSlide(2)"></span>
                 </div>
             </div>
-            <div class="services">
-                <div>.</div>
-                <div>.</div>
-            </div>
-            <div class="marquee">
-                <ul class="marquee-content">
-                    <li><img src="./assets//logo/mazda.svg" alt=""></li>
-                    <li><img src="./assets//logo/toyota.svg" alt=""></li>
-                    <li><img src="./assets//logo/mercedes.svg" alt=""></li>
-                </ul>
-            </div>
-            <div class="products">
-                <div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                </div>
-                <div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                </div>
-            </div>
+            
         </main>
-        <footer>
-            <div>logo</div>
-            <div class="sociallinks">
-                <h1>links</h1>
+        <div class="footer-container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <div class="column-content">
+                        <div><span class="mono-tag">TorqueFusion</span></div>
+                        <div><a target="_blank" class="footer-link" href="https://grok.com">Partners</a></div>
+                        <div><a target="_blank" class="footer-link" href="https://apps.apple.com/app/apple-store/id6670324846?pt=126952307&ct=x.ai%20Direct%20Link&mt=8">Careers</a></div>
+                        <div><a target="_blank" class="footer-link" href="https://play.google.com/store/apps/details?id=ai.x.grok&hl=en">Media</a></div>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <div class="column-content">
+                        <div><span class="mono-tag">Services</span></div>
+                        <div><a class="footer-link" href="/grok">TorqueFusion Group</a></div>
+                        <div><a class="footer-link" href="/api">TorqueFusion Formula1</a></div>
+                        <div><a class="footer-link" href="/api">Investors</a></div>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <div class="column-content">
+                        <div><span class="mono-tag">Socials</span></div>
+                        <div>
+                            <a class="footer-link" href="https://instagram.com" target="_blank">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/>
+                                </svg>
+                                Instagram
+                            </a>
+                        </div>
+                        <div>
+                            <a class="footer-link" href="https://threads.net" target="_blank">
+                                <svg xmlns="http://www.w3.org/2000/svg" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd" viewBox="0 0 439.999 511.429" width="16" height="16" fill="#ffffff">
+                                    <path fill-rule="nonzero" d="M342.382 237.037a175.843 175.843 0 00-6.707-3.045c-3.947-72.737-43.692-114.379-110.428-114.805-38.505-.256-72.972 15.445-94.454 48.041l36.702 25.178c15.265-23.159 39.221-28.097 56.864-28.097.203 0 .408 0 .61.003 21.973.139 38.555 6.528 49.287 18.987 7.81 9.071 13.034 21.606 15.62 37.425-19.482-3.312-40.552-4.329-63.077-3.039-63.449 3.656-104.24 40.661-101.5 92.081 1.39 26.083 14.384 48.522 36.586 63.18 18.773 12.391 42.95 18.451 68.078 17.08 33.183-1.819 59.214-14.48 77.376-37.631 13.793-17.579 22.516-40.362 26.368-69.068 15.814 9.543 27.535 22.103 34.007 37.2 11.007 25.665 11.648 67.84-22.764 102.222-30.15 30.121-66.392 43.151-121.164 43.554-60.757-.45-106.707-19.934-136.582-57.914-27.976-35.563-42.434-86.93-42.973-152.675.539-65.745 14.997-117.113 42.973-152.675 29.875-37.979 75.824-57.464 136.581-57.914 61.197.455 107.948 20.033 138.967 58.195 15.21 18.713 26.677 42.248 34.236 69.688l43.011-11.476c-9.163-33.775-23.581-62.881-43.203-87.017C357.031 25.59 298.872.519 223.935 0h-.3C148.851.518 91.343 25.683 52.709 74.794 18.331 118.498.598 179.308.002 255.534l-.002.18.002.18c.596 76.226 18.329 137.037 52.707 180.741 38.634 49.11 96.142 74.277 170.926 74.794h.3c66.487-.462 113.352-17.868 151.96-56.442 50.511-50.463 48.991-113.717 32.342-152.548-11.944-27.847-34.716-50.464-65.855-65.402zm-114.795 107.93c-27.809 1.566-56.7-10.917-58.124-37.652-1.056-19.823 14.108-41.942 59.83-44.577 5.237-.302 10.375-.45 15.422-.45 16.609 0 32.146 1.613 46.272 4.702-5.268 65.798-36.173 76.483-63.4 77.977z"/>
+                                </svg>
+                                Threads
+                            </a>
+                        </div>
+                        <div>
+                            <a class="footer-link" href="https://twitter.com" target="_blank">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M21.543 7.104c.015.211.015.423.015.636 0 6.507-4.954 14.01-14.01 14.01v-.003A13.94 13.94 0 0 1 0 19.539a9.88 9.88 0 0 0 7.287-2.041 4.93 4.93 0 0 1-4.6-3.42 4.916 4.916 0 0 0 2.223-.084A4.926 4.926 0 0 1 .96 9.167v-.062a4.887 4.887 0 0 0 2.235.616A4.928 4.928 0 0 1 1.67 3.148a13.98 13.98 0 0 0 10.15 5.144 4.929 4.929 0 0 1 8.39-4.49 9.868 9.868 0 0 0 3.128-1.196 4.941 4.941 0 0 1-2.165 2.724A9.828 9.828 0 0 0 24 4.555a10.019 10.019 0 0 1-2.457 2.549z"/>
+                                </svg>
+                                Twitter
+                            </a>
+                        </div>
+                        <div>
+                            <a class="footer-link" href="https://twitch.tv" target="_blank">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M11.571 4.714h1.715v5.143H11.57zm4.715 0H18v5.143h-1.714zM6 0L1.714 4.286v15.428h5.143V24l4.286-4.286h3.428L22.286 12V0zm14.571 11.143l-3.428 3.428h-3.429l-3 3v-3H6.857V1.714h13.714Z"/>
+                                </svg>
+                                Twitch
+                            </a>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <div class="column-content">
+                        <div><span class="mono-tag">Resources</span></div>
+                        <div><a target="_blank" class="footer-link" href="https://status.x.ai">Status</a></div>
+                        <div><a class="footer-link" href="/privacy-policy">Privacy policy</a></div>
+                        <div><a class="footer-link" href="/security">Security</a></div>
+                        <div><a class="footer-link" href="/legal">Legal</a></div>
+                    </div>
+                </div>
             </div>
+        </div>
+        <div class="copy-right">
 
-        </footer>
+            <img src="./assets/logo/company.svg" >
+           <sapn class="mono-tag">&copy; Copyright All Rights Reserved </span><br/>
+            <span class="mono-tag color">torquefusion@inovations.com</span>
+        </div>
     </div>
     <script type="module" src="https://unpkg.com/@splinetool/viewer@1.9.75/build/spline-viewer.js"></script>
 </body>
